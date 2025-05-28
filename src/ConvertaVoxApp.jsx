@@ -1,0 +1,1 @@
+// Código React do ConvertaVoxApp irá aqui.
