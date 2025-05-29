@@ -1,1 +1,0 @@
-// O conteúdo atualizado do ConvertaVoxApp.jsx será incluído aqui posteriormente.
