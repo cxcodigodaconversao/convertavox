@@ -1,1 +1,0 @@
-// PLACEHOLDER: Full ConvertaVoxApp component will be inserted here.
