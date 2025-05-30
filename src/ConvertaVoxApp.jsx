@@ -1,1 +1,0 @@
-// ConvertaVoxApp component placeholder
