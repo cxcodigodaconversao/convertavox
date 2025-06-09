@@ -26,9 +26,7 @@ const suggestions = {
     objections: [
     {
        title: "❌ Já tentei de tudo e nada funciona",
-  
       question: "O que exatamente você tentou e que te fez perder tempo sem retorno?",
-    
       response: "Você é alguém que já sabe o que não funciona. Agora precisa de algo que funcione — simples assim. Aqui, a diferença está na execução com método. Posso te mostrar resultados concretos de quem também já estava no limite e virou o jogo em semanas.",
       title: "❌ Mas será que isso serve pra mim?",
       question: "O que exatamente faria você ter certeza de que isso funciona pra você?",
@@ -38,34 +36,22 @@ const suggestions = {
       response: "Se você aplica com consistência, os primeiros resultados vêm em 30 dias — reais, mensuráveis. Já vi casos que dobraram faturamento em 21 dias. Posso te mostrar. Mas não é fórmula mágica — é execução com método.",
       title: "❌ Eu não tenho dinheiro",
       question: "Se esse investimento voltasse pra você em dobro, faria sentido agora?",
-      response: "A pergunta certa não é quanto custa — mas quanto você já perdeu por não resolver isso. O que você decide aqui vira retorno, não é gasto. Te mostro como clientes no seu perfil recuperaram o investimento em semanas."
-    },
-    {
+      response: "A pergunta certa não é quanto custa — mas quanto você já perdeu por não resolver isso. O que você decide aqui vira retorno, não é gasto. Te mostro como clientes no seu perfil recuperaram o investimento em semanas.",
       title: "❌ Não tenho tempo pra isso agora",
       question: "O que está te tomando mais tempo hoje — e que já deveria estar resolvido?",
-      response: "Exatamente por estar sem tempo é que você precisa resolver isso agora. Esse método te devolve tempo — não exige mais. Posso te mostrar como ele elimina tarefas inúteis e foca no que gera retorno direto."
-    },
-    {
+      response: "Exatamente por estar sem tempo é que você precisa resolver isso agora. Esse método te devolve tempo — não exige mais. Posso te mostrar como ele elimina tarefas inúteis e foca no que gera retorno direto.",
       title: "❌ Preciso conversar com meu parceiro(a) antes",
       question: "O que exatamente seu parceiro(a) precisa entender pra te apoiar nessa decisão?",
-      response: "Claro. Se quiser, posso te ajudar com os argumentos estratégicos pra essa conversa. Isso impacta os dois — e você vai estar levando clareza, resultado e direção."
-    },
-    {
+      response: "Claro. Se quiser, posso te ajudar com os argumentos estratégicos pra essa conversa. Isso impacta os dois — e você vai estar levando clareza, resultado e direção.",
       title: "❌ Não sei se eu vou conseguir",
       question: "Você já superou desafios antes. O que torna esse diferente pra você duvidar da sua capacidade?",
-      response: "Você já passou por coisas muito maiores. Aqui, você só precisa executar com direção. E essa direção eu te dou. Posso te mostrar o plano, os dados e os checkpoints que garantem o resultado — se você fizer, funciona."
-    },
-    {
+      response: "Você já passou por coisas muito maiores. Aqui, você só precisa executar com direção. E essa direção eu te dou. Posso te mostrar o plano, os dados e os checkpoints que garantem o resultado — se você fizer, funciona.",
       title: "❌ E se eu começar e não der certo?",
       question: "O que você costuma fazer quando algo sai diferente do esperado — você ajusta ou abandona?",
-      response: "Se você fizer, dá certo. O único erro real é parar. Aqui, você não segue sozinho — tem acompanhamento pra corrigir rota e ir até o fim. Posso te mostrar casos em que o ajuste foi o diferencial pro resultado."
-    },
-    {
+      response: "Se você fizer, dá certo. O único erro real é parar. Aqui, você não segue sozinho — tem acompanhamento pra corrigir rota e ir até o fim. Posso te mostrar casos em que o ajuste foi o diferencial pro resultado.",
       title: "❌ Você me garante que vai funcionar?",
       question: "Se eu te mostrasse casos de pessoas que aplicaram com intensidade e venceram, isso bastaria como prova?",
       response: "Se você aplicar, funciona. Quem executa colhe. E eu te acompanho pra garantir que você tenha o plano, o ritmo e os ajustes certos. Posso te mostrar casos reais — mas a diferença está na execução."
-    }
-    ]
   },
   I: {
     label: "🟨 Perfil Influente",
