@@ -231,4 +231,128 @@ export default function ConvertaVoxApp() {
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
 
-  const handleCheck = (label
+  const handleCheck = (label, profile) => {
+    const exists = selected.find((s) => s.label === label);
+    setSelected(exists ? selected.filter((s) => s.label !== label) : [...selected, { label, profile }]);
+  };
+
+  const toggleExpand = (profile) => {
+    setExpandedProfiles((prev) =>
+      prev.includes(profile) ? prev.filter((p) => p !== profile) : [...prev, profile]
+    );
+  };
+
+  const toggleObjection = (profile, index) => {
+    const key = `${profile}-${index}`;
+    setExpandedObjections(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  const profileCount = selected.reduce((acc, cur) => {
+    acc[cur.profile] = (acc[cur.profile] || 0) + 1;
+    return acc;
+  }, {});
+
+  const sortedProfiles = Object.keys(profileCount).sort((a, b) => profileCount[b] - profileCount[a]);
+
+  return (
+    <div className="container">
+      <div className="title">📲 ConvertaVox™</div>
+      <p className="subtitle">Radar Comportamental em Calls 1:1</p>
+
+      {/* Marcadores de Observação */}
+      <div className="card">
+        <h2>📊 Marque os sinais observados durante a call:</h2>
+        <div className="markers-grid">
+          {markers.map((item, index) => (
+            <label key={index}>
+              <input
+                type="checkbox"
+                onChange={() => handleCheck(item.label, item.profile)}
+                checked={selected.some((s) => s.label === item.label)}
+              />
+              {item.label}
+            </label>
+          ))}
+        </div>
+      </div>
+
+      {/* Análise de Perfis */}
+      {sortedProfiles.length > 0 && (
+        <div>
+          <h2 style={{textAlign: 'center', marginBottom: '2rem'}}>
+            🎯 Análise de Perfil Comportamental
+          </h2>
+          
+          {sortedProfiles.map((profileKey) => {
+            const suggestion = suggestions[profileKey];
+            const count = profileCount[profileKey];
+            
+            return (
+              <div key={profileKey} className={`card profile-${profileKey.toLowerCase()}`}>
+                <div className="card-header">
+                  <div>
+                    <h2>{suggestion.label} ({count} indicadores)</h2>
+                    <p>{suggestion.approach}</p>
+                    <p>{suggestion.trigger}</p>
+                  </div>
+                  <button onClick={() => toggleExpand(profileKey)}>
+                    {expandedProfiles.includes(profileKey) ? 'Ocultar Objeções' : 'Ver Objeções'}
+                  </button>
+                </div>
+                
+                {expandedProfiles.includes(profileKey) && (
+                  <div style={{marginTop: '1.5rem'}}>
+                    <h3>💬 Objeções e Respostas Calibradas:</h3>
+                    {suggestion.objections.map((objection, index) => (
+                      <div key={index} className="objection">
+                        <div 
+                          className="objection-title"
+                          onClick={() => toggleObjection(profileKey, index)}
+                          style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                        >
+                          <span>{objection.title}</span>
+                          <span>{expandedObjections[`${profileKey}-${index}`] ? '▼' : '▶'}</span>
+                        </div>
+                        
+                        {expandedObjections[`${profileKey}-${index}`] && (
+                          <div style={{marginTop: '1rem'}}>
+                            <div className="objection-question">
+                              <div className="question-label">💬 Pergunta Calibrada:</div>
+                              <em>"{objection.question}"</em>
+                            </div>
+                            <div className="objection-response">
+                              <div className="response-label">💡 Resposta Adaptada:</div>
+                              "{objection.response}"
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Estado inicial */}
+      {sortedProfiles.length === 0 && (
+        <div className="empty-state">
+          <h2>🔍 Análise em Tempo Real</h2>
+          <p>Marque os sinais comportamentais observados para receber as estratégias de conversão personalizadas.</p>
+        </div>
+      )}
+
+      {/* Rodapé */}
+      <div style={{marginTop: '2rem', textAlign: 'center'}}>
+        <p style={{color: '#888', fontSize: '0.9rem'}}>
+          ConvertaVox™ - Sistema de Análise Comportamental para Conversão em Calls
+        </p>
+      </div>
+    </div>
+  );
+}
