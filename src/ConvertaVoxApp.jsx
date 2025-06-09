@@ -25,23 +25,17 @@ const suggestions = {
     response: "🛠 Esse processo é direto ao ponto e gera ROI visível em poucas semanas.",
     objections: [
     {
-       title: "❌ Já tentei de tudo e nada funciona"},
-    {
-      question: "O que exatamente você tentou e que te fez perder tempo sem retorno?"},
-    {
-      response: "Você é alguém que já sabe o que não funciona. Agora precisa de algo que funcione — simples assim. Aqui, a diferença está na execução com método. Posso te mostrar resultados concretos de quem também já estava no limite e virou o jogo em semanas."
-    },
-    {
+       title: "❌ Já tentei de tudo e nada funciona",
+  
+      question: "O que exatamente você tentou e que te fez perder tempo sem retorno?",
+    
+      response: "Você é alguém que já sabe o que não funciona. Agora precisa de algo que funcione — simples assim. Aqui, a diferença está na execução com método. Posso te mostrar resultados concretos de quem também já estava no limite e virou o jogo em semanas.",
       title: "❌ Mas será que isso serve pra mim?",
       question: "O que exatamente faria você ter certeza de que isso funciona pra você?",
-      response: "Se você quer evolução real e resultado com clareza, sim, serve pra você. O método se adapta a quem executa com foco. Posso te mostrar casos de quem chegou aqui com o mesmo perfil que o seu — e dobrou o resultado com precisão."
-    },
-    {
+      response: "Se você quer evolução real e resultado com clareza, sim, serve pra você. O método se adapta a quem executa com foco. Posso te mostrar casos de quem chegou aqui com o mesmo perfil que o seu — e dobrou o resultado com precisão.",
       title: "❌ Quanto tempo leva pra dar resultado?",
       question: "Em quanto tempo você espera ver um retorno visível? Isso te ajudaria a decidir?",
-      response: "Se você aplica com consistência, os primeiros resultados vêm em 30 dias — reais, mensuráveis. Já vi casos que dobraram faturamento em 21 dias. Posso te mostrar. Mas não é fórmula mágica — é execução com método."
-    },
-    {
+      response: "Se você aplica com consistência, os primeiros resultados vêm em 30 dias — reais, mensuráveis. Já vi casos que dobraram faturamento em 21 dias. Posso te mostrar. Mas não é fórmula mágica — é execução com método.",
       title: "❌ Eu não tenho dinheiro",
       question: "Se esse investimento voltasse pra você em dobro, faria sentido agora?",
       response: "A pergunta certa não é quanto custa — mas quanto você já perdeu por não resolver isso. O que você decide aqui vira retorno, não é gasto. Te mostro como clientes no seu perfil recuperaram o investimento em semanas."
