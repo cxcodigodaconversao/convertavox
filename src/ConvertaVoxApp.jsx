@@ -25,8 +25,10 @@ const suggestions = {
     response: "🛠 Esse processo é direto ao ponto e gera ROI visível em poucas semanas.",
     objections: [
     {
-       title: "❌ Já tentei de tudo e nada funciona",
-      question: "O que exatamente você tentou e que te fez perder tempo sem retorno?",
+       title: "❌ Já tentei de tudo e nada funciona"},
+    {
+      question: "O que exatamente você tentou e que te fez perder tempo sem retorno?"},
+    {
       response: "Você é alguém que já sabe o que não funciona. Agora precisa de algo que funcione — simples assim. Aqui, a diferença está na execução com método. Posso te mostrar resultados concretos de quem também já estava no limite e virou o jogo em semanas."
     },
     {
