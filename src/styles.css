@@ -51,13 +51,17 @@ h1, h2, h3 {
 .card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1rem;
 }
 
 .card-header h2 {
   color: #d2bc8f;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-header div {
+  flex: 1;
 }
 
 /* Botões */
@@ -70,6 +74,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -103,7 +108,7 @@ label:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /* Objeções */
@@ -152,19 +157,19 @@ label:hover {
 }
 
 /* Perfis específicos */
-.profile-dominante {
+.profile-d {
   border-left: 4px solid #ff6b6b;
 }
 
-.profile-influente {
+.profile-i {
   border-left: 4px solid #ffd43b;
 }
 
-.profile-estavel {
+.profile-s {
   border-left: 4px solid #51cf66;
 }
 
-.profile-conforme {
+.profile-c {
   border-left: 4px solid #339af0;
 }
 
