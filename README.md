@@ -1,4 +1,4 @@
-# 📲 ConvertaVox™
+# 🚀 CXconversão
 
 Sistema de análise comportamental para conversão em calls 1:1
 
