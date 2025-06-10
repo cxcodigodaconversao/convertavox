@@ -264,7 +264,7 @@ export default function CXconversão() {
 
       {/* Marcadores de Observação */}
       <div className="card">
-        <h2>📊 Marque os sinais observados durante a call:</h2>
+        <h2>Marque os sinais observados durante a call:</h2>
         <div className="markers-grid">
           {markers.map((item, index) => (
             <label key={index}>
