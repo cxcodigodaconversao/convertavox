@@ -342,7 +342,7 @@ export default function CXconversão() {
       {/* Estado inicial */}
       {sortedProfiles.length === 0 && (
         <div className="empty-state">
-          <h2>🔍 Análise em Tempo Real</h2>
+          <h2>Análise em Tempo Real</h2>
           <p>Marque os sinais comportamentais observados para receber as estratégias de conversão personalizadas.</p>
         </div>
       )}
