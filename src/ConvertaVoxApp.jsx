@@ -259,7 +259,7 @@ export default function CXconversão() {
 
   return (
     <div className="container">
-      <div className="title">🚀 CXconversão</div>
+      <div className="title">CXconversão</div>
       <p className="subtitle">Radar Comportamental em Calls 1:1</p>
 
       {/* Marcadores de Observação */}
@@ -350,7 +350,7 @@ export default function CXconversão() {
       {/* Rodapé */}
       <div style={{marginTop: '2rem', textAlign: 'center'}}>
         <p style={{color: '#888', fontSize: '0.9rem'}}>
-          ConvertaVox™ - Sistema de Análise Comportamental para Conversão em Calls
+          CXconversão - Sistema de Análise Comportamental para Conversão em Calls
         </p>
       </div>
     </div>
