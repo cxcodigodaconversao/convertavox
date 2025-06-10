@@ -1,8 +1,8 @@
 {
-  "name": "🎯 CXconversão",
+  "name": "CXconversão",
   "version": "1.0.0",
   "type": "module",
-  "description": "🎯 CXconversão - Radar Comportamental em Calls 1:1",
+  "description": "CXconversão - Radar Comportamental em Calls 1:1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,6 +19,6 @@
     "vite": "^4.4.5"
   },
   "keywords": ["sales", "conversion", "behavioral-analysis", "react"],
-  "author": "ConvertaVox™",
+  "author": "CXconversão",
   "license": "MIT"
 }
