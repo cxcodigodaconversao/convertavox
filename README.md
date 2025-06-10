@@ -57,4 +57,4 @@ npm run dev
 
 ## 📄 Licença
 
-MIT License - ConvertaVox™
+MIT License - CXconversão
