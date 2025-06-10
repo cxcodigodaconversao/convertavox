@@ -226,7 +226,7 @@ const suggestions = {
   }
 };
 
-export default function ConvertaVoxApp() {
+export default function CXconversão() {
   const [selected, setSelected] = useState([]);
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
@@ -259,7 +259,7 @@ export default function ConvertaVoxApp() {
 
   return (
     <div className="container">
-      <div className="title">📲 ConvertaVox™</div>
+      <div className="title">🚀 CXconversão</div>
       <p className="subtitle">Radar Comportamental em Calls 1:1</p>
 
       {/* Marcadores de Observação */}
