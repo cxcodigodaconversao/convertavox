@@ -1,12 +1,13 @@
 {
-  "name": "CXconversão",
+  "name": "diagnostico-cx-conversao",
   "version": "1.0.0",
   "type": "module",
-  "description": "CXconversão - Radar Comportamental em Calls 1:1",
+  "description": "Diagnóstico CX - Código da Conversão Consciente",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite preview --port 4173"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,7 +19,10 @@
     "@vitejs/plugin-react": "^4.0.3",
     "vite": "^4.4.5"
   },
-  "keywords": ["sales", "conversion", "behavioral-analysis", "react"],
-  "author": "CXconversão",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["diagnostico", "vendas", "conversao", "comportamental", "react"],
+  "author": "Código da Conversão",
   "license": "MIT"
 }
